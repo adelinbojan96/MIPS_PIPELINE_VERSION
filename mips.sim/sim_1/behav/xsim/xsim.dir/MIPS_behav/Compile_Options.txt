@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "MIPS_behav" "xil_defaultlib.MIPS" -log "elaborate.log" 

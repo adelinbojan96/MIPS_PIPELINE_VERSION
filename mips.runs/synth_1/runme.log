@@ -1,0 +1,421 @@
+
+*** Running vivado
+    with args -log MIPS.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPS.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source MIPS.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 377.980 ; gain = 67.012
+Command: read_checkpoint -auto_incremental -incremental C:/Users/adelinul/lab5/lab5.srcs/utils_1/imports/synth_1/MIPS.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/adelinul/lab5/lab5.srcs/utils_1/imports/synth_1/MIPS.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MIPS -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3564
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1205.996 ; gain = 408.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPS' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:17]
+INFO: [Synth 8-3491] module 'mpg' declared at 'C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MPG.vhd:4' bound to instance 'MPG_component' of component 'mpg' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'mpg' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MPG.vhd:12]
+WARNING: [Synth 8-614] signal 'initial_counterValue' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MPG.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'mpg' (0#1) [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MPG.vhd:12]
+INFO: [Synth 8-3491] module 'mpg' declared at 'C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MPG.vhd:4' bound to instance 'MPG_component2' of component 'mpg' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:151]
+INFO: [Synth 8-3491] module 'INST_FETCH' declared at 'C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/inst_fetch.vhd:5' bound to instance 'INS_FETCH' of component 'inst_fetch' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'INST_FETCH' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/inst_fetch.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'INST_FETCH' (0#1) [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/inst_fetch.vhd:19]
+INFO: [Synth 8-3491] module 'op_fetch' declared at 'C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/op_fetch.vhd:6' bound to instance 'OP_FETCHING' of component 'op_fetch' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'op_fetch' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/op_fetch.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'op_fetch' (0#1) [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/op_fetch.vhd:24]
+INFO: [Synth 8-3491] module 'execution_unit' declared at 'C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:4' bound to instance 'EX_UNIT' of component 'execution_unit' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'execution_unit' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:59]
+INFO: [Synth 8-226] default block is never used [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:62]
+INFO: [Synth 8-226] default block is never used [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:73]
+INFO: [Synth 8-226] default block is never used [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:87]
+WARNING: [Synth 8-614] signal 'rd_1' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:57]
+WARNING: [Synth 8-614] signal 'outMux1' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:57]
+WARNING: [Synth 8-614] signal 'rd_2' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'execution_unit' (0#1) [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:25]
+INFO: [Synth 8-3491] module 'DataMemory' declared at 'C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/DataMemory.vhd:5' bound to instance 'DATA_MEM' of component 'DataMemory' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:270]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/DataMemory.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (0#1) [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/DataMemory.vhd:18]
+INFO: [Synth 8-3491] module 'MainControlUnit' declared at 'C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MainControlUnit.vhd:4' bound to instance 'MAIN_UNIT' of component 'MainControlUnit' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'MainControlUnit' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MainControlUnit.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'MainControlUnit' (0#1) [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MainControlUnit.vhd:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:315]
+WARNING: [Synth 8-614] signal 'instruction' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:313]
+WARNING: [Synth 8-614] signal 'pc_4' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:313]
+WARNING: [Synth 8-614] signal 'rd1' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:313]
+WARNING: [Synth 8-614] signal 'rd2' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:313]
+WARNING: [Synth 8-614] signal 'ext_imm' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:313]
+WARNING: [Synth 8-614] signal 'ALU_res' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:313]
+WARNING: [Synth 8-614] signal 'read_data' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:313]
+WARNING: [Synth 8-614] signal 'wd' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:313]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:4' bound to instance 'SSD_MAPPING' of component 'ssd' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:35]
+WARNING: [Synth 8-614] signal 'digit0' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:33]
+WARNING: [Synth 8-614] signal 'digit1' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:33]
+WARNING: [Synth 8-614] signal 'digit2' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:33]
+WARNING: [Synth 8-614] signal 'digit3' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:33]
+WARNING: [Synth 8-614] signal 'digit4' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:33]
+WARNING: [Synth 8-614] signal 'digit5' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:33]
+WARNING: [Synth 8-614] signal 'digit6' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:33]
+WARNING: [Synth 8-614] signal 'digit7' is read in the process but is not in the sensitivity list [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:33]
+INFO: [Synth 8-226] default block is never used [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/7SD.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'MIPS' (0#1) [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:17]
+WARNING: [Synth 8-3848] Net ex_rd_2 in module/entity execution_unit does not have driver. [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/execution_unit.vhd:20]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_write_reg was removed.  [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:213]
+WARNING: [Synth 8-6014] Unused sequential element ex_alu_src_reg was removed.  [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:217]
+WARNING: [Synth 8-6014] Unused sequential element mem_mem_write_reg was removed.  [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:259]
+WARNING: [Synth 8-6014] Unused sequential element mem_alu_res_reg was removed.  [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:262]
+WARNING: [Synth 8-6014] Unused sequential element mem_rd2_reg was removed.  [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:264]
+WARNING: [Synth 8-7129] Port ex_rd_2[31] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[30] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[29] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[28] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[27] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[26] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[25] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[24] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[23] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[22] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[21] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[20] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[19] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[18] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[17] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[16] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[15] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[14] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[13] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[12] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[11] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[10] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[9] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[8] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[7] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[6] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[5] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[4] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[3] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[2] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[1] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_rd_2[0] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa[4] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa[3] in module execution_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[4] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module MIPS is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1297.832 ; gain = 500.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1297.832 ; gain = 500.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1297.832 ; gain = 500.641
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1297.832 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/adelinul/lab5/lab5.srcs/constrs_1/new/NexysA7_test_env.xdc]
+Finished Parsing XDC File [C:/Users/adelinul/lab5/lab5.srcs/constrs_1/new/NexysA7_test_env.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/adelinul/lab5/lab5.srcs/constrs_1/new/NexysA7_test_env.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MIPS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MIPS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1391.965 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1391.965 ; gain = 594.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1391.965 ; gain = 594.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1391.965 ; gain = 594.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1391.965 ; gain = 594.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	  33 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	  14 Input    3 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'ex_sa_reg' and it is trimmed from '5' to '3' bits. [C:/Users/adelinul/lab5/lab5.srcs/sources_1/new/MIPS.vhd:223]
+WARNING: [Synth 8-7129] Port btn[4] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module MIPS is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1391.965 ; gain = 594.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------------+-----------+----------------------+----------------+
+|MIPS        | DATA_MEM/ram_reg    | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|MIPS        | OP_FETCHING/reg_reg | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+---------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1391.965 ; gain = 594.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1449.980 ; gain = 652.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+---------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------------+-----------+----------------------+----------------+
+|MIPS        | DATA_MEM/ram_reg    | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|MIPS        | OP_FETCHING/reg_reg | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+---------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1460.043 ; gain = 662.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1460.043 ; gain = 662.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1460.043 ; gain = 662.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1460.043 ; gain = 662.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1460.043 ; gain = 662.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1460.043 ; gain = 662.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1460.043 ; gain = 662.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|MIPS        | wb_reg_write_reg  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|MIPS        | wb_mem_to_reg_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    25|
+|3     |LUT1     |     4|
+|4     |LUT2     |     1|
+|5     |LUT3     |    48|
+|6     |LUT4     |    53|
+|7     |LUT5     |    87|
+|8     |LUT6     |    95|
+|9     |MUXF7    |     8|
+|10    |RAM32M   |    10|
+|11    |RAM32X1D |     4|
+|12    |RAM64X1S |    32|
+|13    |SRL16E   |     2|
+|14    |FDCE     |    31|
+|15    |FDRE     |   243|
+|16    |IBUF     |     6|
+|17    |OBUF     |    31|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1460.043 ; gain = 662.852
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 1460.043 ; gain = 568.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1460.043 ; gain = 662.852
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1463.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1471.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete, checksum: 951baab1
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:52 . Memory (MB): peak = 1471.562 ; gain = 1068.754
+INFO: [Common 17-1381] The checkpoint 'C:/Users/adelinul/lab5/lab5.runs/synth_1/MIPS.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MIPS_utilization_synth.rpt -pb MIPS_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  2 11:25:52 2024...

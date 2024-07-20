@@ -1,0 +1,23 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MIPS_behav xil_defaultlib.MIPS -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture mpg of entity xil_defaultlib.mpg [mpg_default]
+Compiling architecture inst_fetch of entity xil_defaultlib.INST_FETCH [inst_fetch_default]
+Compiling architecture op_fetch of entity xil_defaultlib.op_fetch [op_fetch_default]
+Compiling architecture execution_unit of entity xil_defaultlib.execution_unit [execution_unit_default]
+Compiling architecture datamemory of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture maincontrolunit of entity xil_defaultlib.MainControlUnit [maincontrolunit_default]
+Compiling architecture ssd of entity xil_defaultlib.SSD [ssd_default]
+Compiling architecture mips of entity xil_defaultlib.mips
+Built simulation snapshot MIPS_behav
